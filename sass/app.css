@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 /**
  * Foundation for Sites by ZURB
  * Version 6.4.3
@@ -8036,10 +8036,22 @@ body {
     margin-bottom: -4.5rem;
   }
 }
+.header p {
+  font-family: "Space Grotesk", sans-serif;
+}
 .header button {
-  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-left: 2.4rem;
+  border-radius: 50px;
+}
+@media (min-width: 900px) {
+  .header button {
+    font-size: 1rem;
+    margin-left: 2.4rem;
+    padding: 0.8rem;
+  }
 }
 .header.header-scrolled {
   background-color: #FCFCFD;
@@ -8050,11 +8062,6 @@ body {
     height: 4rem;
   }
 }
-@media (min-width: 900px) {
-  .header.header-scrolled {
-    height: 4.5rem;
-  }
-}
 .header.header-scrolled .notice-banner {
   display: none;
 }
@@ -8063,6 +8070,8 @@ body {
   z-index: -1;
 }
 .header .header-main {
+  max-width: 81rem;
+  margin: auto;
   padding: 0.75rem 0;
 }
 @media print, screen and (min-width: 64em) {
@@ -8103,6 +8112,14 @@ body {
 }
 .header .header-right .menu-main-menu-container {
   display: inline-block;
+}
+.header .header-right .header-right-desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  .header .header-right .header-right-desktop {
+    display: block;
+  }
 }
 .header .header-right ul {
   padding: 0;

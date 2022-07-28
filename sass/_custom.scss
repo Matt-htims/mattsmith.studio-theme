@@ -133,6 +133,10 @@ body {
 		height: rem-calc(90);
 		margin-bottom: rem-calc(-90);
 	}
+
+	p {
+		font-family: $space-grotesk;
+	}
 	/* // To make header disappear
 	&.header-scrolled {
 		z-index: -1;
@@ -146,9 +150,17 @@ body {
 	*/
 
 	button {
-		font-size: rem-calc(20);
+		font-family: $inter;
+		padding: 10px 20px;
+		font-size: rem-calc(16);
 		font-weight: 500;
-		margin-left: rem-calc(48);
+		border-radius: 50px;
+
+		@include for-tablet-landscape-up {
+			font-size: rem-calc(20);
+			margin-left: rem-calc(48);
+			padding: rem-calc(16, 20);
+		}
 	}
 
 	&.header-scrolled {
@@ -157,10 +169,6 @@ body {
 
 		@include for-tablet-portrait-up {
 			height: rem-calc(80);
-		}
-
-		@include for-tablet-landscape-up {
-			height: rem-calc(90);
 		}
 		
 		.notice-banner {
@@ -172,6 +180,8 @@ body {
 		z-index: -1;
 	}
 	.header-main {
+		max-width: rem-calc(1620);
+		margin: auto;
 		padding: rem-calc(15 0);
 		@include breakpoint(large) {
 			padding: rem-calc(20 0);
@@ -206,6 +216,14 @@ body {
 		align-items: center;
 		.menu-main-menu-container {
 			display: inline-block;
+		}
+
+		.header-right-desktop {
+			display: none;
+
+			@include for-tablet-portrait-up {
+				display: block;
+			}
 		}
 		ul {
 			@include menu-base();
