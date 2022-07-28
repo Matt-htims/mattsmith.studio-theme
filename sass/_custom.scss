@@ -161,7 +161,7 @@ body {
 		}
 
 		@include for-tablet-landscape-up {
-			font-size: rem-calc(20);
+			font-size: rem-calc(18);
 			padding: 14px 20px;
 		}
 	}
@@ -235,7 +235,7 @@ body {
 			li {
 				a {
 					color: $blue-dark;
-					font-size: rem-calc(20);
+					font-size: rem-calc(18);
 					line-height: rem-calc(25);
 					padding: rem-calc(10 0);
 					margin: rem-calc(0 5);

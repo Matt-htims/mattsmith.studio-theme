@@ -8053,7 +8053,7 @@ body {
 }
 @media (min-width: 900px) {
   .header button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 14px 20px;
   }
 }
@@ -8156,7 +8156,7 @@ body {
 }
 .header .header-right ul li a {
   color: #2E3552;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.25rem;
   padding: 0.5rem 0;
   margin: 0 0.25rem;

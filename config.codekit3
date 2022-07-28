@@ -1890,6 +1890,26 @@
       "oAP" : "\/template-parts\/blocks\/section\/code.php",
       "oF" : 0
     },
+    "\/template-parts\/blocks\/side-by-side-text\/code.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/side-by-side-text\/code.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/side-by-side-text\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/side-by-side-text\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/template-parts\/blocks\/social-icons\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,

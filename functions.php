@@ -521,6 +521,19 @@ function register_acf_block_types() {
        'keywords'          => array( 'page-intro-m', 'quote' ),
    ));
 
+   // register a side by side text block.
+   acf_register_block_type(array(
+       'name'              => 'side-by-side-text',
+       'title'             => __('Side by side text'),
+       'description'       => __('A custom side by side text block.'),
+       'render_template'   => 'template-parts/blocks/side-by-side-text/code.php',
+       //'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/side-by-side-text/style.css',
+       'category'          => 'formatting',
+       'icon'              => 'star-filled',
+       'mode'              => 'edit',
+       'keywords'          => array( 'page-intro-m', 'quote' ),
+   ));
+
    // register a video-link block.
    acf_register_block_type(array(
        'name'              => 'video-link',
