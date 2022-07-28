@@ -153,6 +153,16 @@ body {
 
 	&.header-scrolled {
 		background-color: $offwhite;
+		height: rem-calc(50);
+
+		@include for-tablet-portrait-up {
+			height: rem-calc(80);
+		}
+
+		@include for-tablet-landscape-up {
+			height: rem-calc(90);
+		}
+		
 		.notice-banner {
 			display: none;
 		}

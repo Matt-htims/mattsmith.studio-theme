@@ -78,8 +78,6 @@ $postSlug = $post->post_name;
 
     <div class="header-main">
 
-        <div class="container">
-
             <div class="header-wrap">
             
                 <div class="header-left">
@@ -100,24 +98,19 @@ $postSlug = $post->post_name;
 
                 <div class="header-right">
 
+                    <div class="header-right-desktop">
+
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+                    </div>
 
                     <button>Work with me</button>
-
-                        <?php /*
-                        <div class="hamburger">
-                            <span class="hamburger__top-bun"></span>
-                            <span class="hamburger__bottom-bun"></span>
-                        </div>
-                        */ ?>
+                    
 
                     </a>
                     
                 </div><!-- .header-right -->
 
             </div><!-- .header-wrap -->
-            
-        </div><!-- .container -->
         
     </div><!-- .header-main -->
 

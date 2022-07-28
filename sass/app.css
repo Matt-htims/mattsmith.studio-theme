@@ -8043,6 +8043,17 @@ body {
 }
 .header.header-scrolled {
   background-color: #FCFCFD;
+  height: 2.5rem;
+}
+@media (min-width: 600px) {
+  .header.header-scrolled {
+    height: 4rem;
+  }
+}
+@media (min-width: 900px) {
+  .header.header-scrolled {
+    height: 4.5rem;
+  }
 }
 .header.header-scrolled .notice-banner {
   display: none;
