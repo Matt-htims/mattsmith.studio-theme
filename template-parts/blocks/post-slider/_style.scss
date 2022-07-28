@@ -1,0 +1,118 @@
+.post-slider-wrap {
+	overflow-x: visible;
+	width: 100%;
+	padding-bottom: rem-calc(70);
+	.slick-list {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+		//overflow-x: visible;
+		@include breakpoint(full) {
+			padding-left: calc((100% - 1650px) / 2) !important;
+			padding-right: calc((100% - 1650px) / 2) !important;
+		}
+	}
+	.slick-track {
+		display: flex;
+	}
+	.post-grid-pod {
+		flex: 1;
+		height: auto;
+		padding: rem-calc(0 25);
+		opacity: 0.2;
+		.post-grid-pod-inner {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			color: $black;
+			.post-grid-pod-image-wrap {
+				position: relative;
+				width: 100%;
+				border-radius: rem-calc(10);
+				padding-bottom: 75%;
+				margin-bottom: rem-calc(20);
+				overflow: hidden;
+				.post-grid-pod-image {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center center;
+					transition: transform 0.3s ease-in-out;
+				}
+			}
+			.post-grid-pod-text {
+				.post-grid-pod-text-top {
+					display: flex;
+					align-items: flex-start;
+					.post-grid-pod-text-title {
+						flex-grow: 1;
+						transition: color 0.3s ease-in-out;
+					}
+					.post-grid-pod-link-icon {
+						flex-shrink: 1;
+						width: rem-calc(30);
+						height: rem-calc(30);
+						background-image: url('../images/arrow-black@2x.png');
+						background-size: rem-calc(23 22);
+						background-repeat: no-repeat;
+						background-position: center center;
+						margin-left: rem-calc(10);
+						transition: transform 0.3s ease-in-out;
+					}
+				}
+				.post-grid-pod-text-bottom {
+					@include small-text();
+				}
+			}
+			.post-grid-pod-link {
+				flex-shrink: 1;
+			}
+		}
+		&:hover {
+			.post-grid-pod-image {
+				transform: scale(1.05);
+			}
+			.post-grid-pod-text-title {
+				color: $primary;
+			}
+			.post-grid-pod-inner .post-grid-pod-text .post-grid-pod-text-top .post-grid-pod-link-icon {
+				background-image: url('../images/arrow-green@2x.png');
+				transform: translateX(5px);
+			}
+		}
+		&.slick-active {
+			opacity: 1;
+		}
+	}
+	&.thumbnail-style-square {
+		.post-grid-pod {
+			.post-grid-pod-inner {
+				.post-grid-pod-image-wrap {
+					padding-bottom: 100%;
+				}
+			}
+		}
+	}
+}
+
+.section-bg-green,
+.section-bg-black {
+	.post-slider-wrap {
+		.post-grid-pod {
+			.post-grid-pod-inner {
+				color: $white;
+				.post-grid-pod-text {
+					.post-grid-pod-text-top {
+						.post-grid-pod-link-icon {
+							background-image: url('../images/arrow-white@2x.png');
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+// ----- Job List ----- //
+
+.job-list-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: rem-calc(50 0);
+	border-top: 1px solid $light-grey;
+	.job-list-pod {
+		padding: rem-calc(30 0);
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span.as-h4 {
+			margin: 0;
+		}
+		a.button {
+			margin-bottom: 0;
+		}
+	}
+}

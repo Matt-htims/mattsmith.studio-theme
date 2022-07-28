@@ -1,0 +1,14 @@
+.parallax-image {
+	width: 100%;
+	height: 50vh;
+	background-color: pink;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	border-top: rem-calc(7) solid $black;
+	border-bottom: rem-calc(30) solid $light-grey;
+	//margin-top: rem-calc(100);
+	//margin-bottom: rem-calc(100);
+	margin-bottom: 0;
+}

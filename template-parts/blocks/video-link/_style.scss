@@ -1,0 +1,23 @@
+.video-link {
+	@include xy-cell(12);
+	margin-top: rem-calc(15);
+	@include breakpoint(medlarge) {
+		@include xy-cell(10);
+		@include xy-cell-offset(1);
+	}
+	@include breakpoint(large) {
+		@include xy-cell(8);
+		@include xy-cell-offset(1);
+	}
+	a.video-link-button {
+		display: inline-block;
+		height: rem-calc(55);
+		padding: rem-calc(20 0 0 70);
+		background-image: url('../images/video-button@2x.png');
+		background-size: rem-calc(55 55);
+		background-repeat: no-repeat;
+		background-position: left center;
+		@include small-text();
+		color: $grey;
+	}
+}

@@ -1,0 +1,91 @@
+// Sticky Side Title
+
+.sticky-side-title-outer {
+	.sticky-side-title-wrap {
+		position: relative;
+		padding: rem-calc(50 0);
+		&:nth-child(2n+1) {
+			background-color: $white;
+		}
+		.sticky-side-title-release {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 1px;
+		}
+	}
+}
+
+.sticky-side-title-inner {
+	@include xy-grid();
+	width: 100%;
+	margin: 0;
+}
+
+.side-title-inner {
+	position: sticky;
+	top: rem-calc(150);
+}
+
+.no-stickiness .side-title-inner {
+	position: relative;
+	top: 0;
+}
+
+.side-title {
+	@include xy-cell(12);
+	width: 100%;
+	margin: 0;
+	padding-bottom: rem-calc(50);
+	@include breakpoint(medium) {
+		@include xy-cell(5);
+		padding-bottom: 0;
+	}
+	@include breakpoint(large) {
+		@include xy-cell(4);
+		@include xy-cell-offset(1);
+	}
+}
+
+.side-title-text {
+	@include xy-cell(12);
+	width: 100%;
+	margin: 0;
+	@include breakpoint(medium) {
+		@include xy-cell(7);
+		padding-top: rem-calc(45);
+	}
+	@include breakpoint(large) {
+		@include xy-cell(6);
+	}
+}
+
+.sticky-side-narrow-left {
+	.side-title {
+		@include breakpoint(medium) {
+			@include xy-cell(4);
+			text-align: right;
+			padding-right: rem-calc(50);
+		}
+		@include breakpoint(large) {
+			@include xy-cell(3);
+			@include xy-cell-offset(1);
+		}
+	}
+}
+
+.sticky-side-large-titles {
+	h2 {
+		@include h1-text();
+		margin: 0;
+	}
+}
+
+.sticky-side-text-no-pad {
+	.side-title-text {
+		@include breakpoint(medium) {
+			padding-top: rem-calc(15);
+		}
+	}
+}

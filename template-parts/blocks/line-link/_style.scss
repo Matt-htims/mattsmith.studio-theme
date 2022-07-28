@@ -1,0 +1,12 @@
+.line-link-wrapper {
+	padding-top: rem-calc(20);
+}
+
+section.section-bg-green {
+	.line-link-wrapper a.line-link {
+		color: $white !important;
+		&:after {
+			background-image: url('../images/arrow-white@2x.png');
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.testimonial-container {
+	//overflow-x: visible;
+}
+
+.testimonial-wrap {
+	overflow-x: visible;
+	width: 100%;
+	padding-bottom: rem-calc(70);
+	.slick-list {
+		width: 100%;
+		//padding-left: 50px;
+		//padding-right: calc((100% - 100px) * 0.35);
+		//overflow-x: visible;
+		@include breakpoint(full) {
+			//padding-left: calc((100% - 1720px) / 2);
+			//padding-right: calc((100% - ((100% - 1720px) / 2)) * 0.35);
+		}
+	}
+	.slick-track {
+		@include xy-grid();
+	}
+	.testimonial-pod {
+		position: relative;
+		opacity: 0.5;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: rem-calc(50);
+			height: rem-calc(44);
+			background-image: url('../images/quotemarks@2x.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		&.slick-active {
+			opacity: 1;
+		}
+		.testimonial-text-inner {
+			@include xy-grid();
+			@include flex-align(left, middle);
+		}
+		.testimonial-pod-image {
+			position: relative;
+			@include xy-cell(12);
+			text-align: center;
+			padding: rem-calc(30 0);
+			@include breakpoint(medium) {
+				@include xy-cell(3);
+			}
+			img {
+				width: 100%;
+				border-radius: 50%;
+				margin-top: rem-calc(15);
+				//border: $primary 15px solid;
+			}
+		}
+		.testimonial-pod-text {
+			@include xy-cell(12);
+			@include breakpoint(medium) {
+				@include xy-cell(8);
+				margin-left: rem-calc(40);
+			}
+			.testimonial-pod-text-title {
+				@include meta-text();
+				color: $primary;
+				margin-bottom: rem-calc(20);
+			}
+			.testimonial-pod-text-testimonial {
+				//font-style: italic;
+				p {
+					&:before {
+						content: open-quote;
+					}
+					&:after {
+						content: close-quote;
+					}
+				}
+			}
+			p {
+				@include h3-text();
+				margin-bottom: rem-calc(30);
+			}
+		}
+		.testimonial-pod-author {
+			font-size: rem-calc(16);
+			line-height: rem-calc(20);
+			font-weight: 700;
+			margin-bottom: rem-calc(10);
+			span.testimonial-pod-author-position {
+				display: block;
+				@include small-text();
+				font-weight: 400;
+			}
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		right: 0;
+		left: auto;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-top: rem-calc(40);
+		li {
+			width: rem-calc(10);
+		    height: rem-calc(10);
+		    margin-bottom: rem-calc(15);
+		    button {
+			    width: rem-calc(10);
+			    height: rem-calc(10);
+			    background-color: $black;
+			    border: none;
+		    }
+		    &.slick-active {
+		    	button {
+		    		background-color: $primary;
+		    	}
+		    }
+		}
+	}
+}

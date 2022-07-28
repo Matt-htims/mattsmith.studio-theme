@@ -1,0 +1,26 @@
+.google-map-wrap {
+	overflow-x: hidden;
+	.acf-map {
+		border-bottom: rem-calc(20px) solid $secondary;
+		@include breakpoint(xlarge) {
+			width: 150vw;
+		}
+	}
+	.map-content-box {
+		width: 100%;
+		background-color: $white;
+		padding: rem-calc(50);
+		position: relative;
+		h2 {
+			margin-top: 0;
+		}
+		@include breakpoint(xlarge) {
+			max-width: rem-calc(700);
+			margin-top: rem-calc(-100);
+			border-top: rem-calc(20px) solid $secondary;
+		}
+		@include breakpoint(xxlarge) {
+			margin-top: rem-calc(-280);
+		}
+	}
+}

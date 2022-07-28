@@ -1,0 +1,111 @@
+section {
+	position: relative;
+	//padding: rem-calc(100 0);
+	padding: rem-calc(25 0);
+	@include breakpoint(medium) {
+		padding: rem-calc(50 0);
+	}
+	&.section-bg-offwhite {
+		background-color: $offwhite;
+	}
+	&.section-bg-offwhite-dark {
+		background-color: $offwhite-dark;
+	}
+	&.section-bg-white {
+		background-color: $white;
+	}
+	&.section-bg-green {
+		background-color: $primary;
+	}
+	&.section-bg-blue {
+		background-color: $secondary;
+	}
+	&.section-bg-orange {
+		background-color: $tertiary;
+	}
+	&.section-bg-black {
+		background-color: $black;
+	}
+	&.section-bg-transparent {
+		background-color: transparent;
+	}
+	&.section-bg-green,
+	&.section-bg-black {
+		color: $white;
+		h1,h2,h3,h4,h5,p,a, .small-text {
+			color: $white;
+		}
+	}
+	&.section-bottom-50 {
+		padding-bottom: rem-calc(50);
+	}
+	.section-title-large {
+		@include h1-text();
+	}
+	&.section-reduced-padding {
+		padding: rem-calc(30 0);
+	}
+	&.section-no-padding {
+		padding: 0;
+	}
+	&.section-indent-left {
+		padding-left: rem-calc(150);
+	}
+}
+
+body.no-header-rescue {
+	.main-content:first-child {
+		section:first-child {
+			padding-top: 0;
+		}
+	}
+}
+
+body section.section-bg-offwhite,
+body section.section-bg-white {
+	h1,h2,h3,h4,h5,p,
+	//a:not(.button):not(.wp-block-button__link),
+	.small-text {
+		color: $text-color;
+	}
+}
+
+body section.section-bg-green,
+body section.section-bg-blue,
+body section.section-bg-orange,
+body section.section-bg-black {
+	h1,h2,h3,h4,h5,p,a, .small-text {
+		color: $white;
+	}
+}
+
+section .main-content {
+	position: relative;
+}
+
+body section.section-bg-offwhite {
+	.power-icon {
+		svg {
+			#fill {
+				fill: $white;
+			}
+		}
+	}
+}
+
+.sneaky-section {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+section.tabbed-section {
+	display: none;
+	&.tabbed-section-active {
+		display: block;
+	}
+}
+
+a.tab-link {
+	margin-right: rem-calc(15);
+}

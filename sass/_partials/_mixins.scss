@@ -1,0 +1,194 @@
+// ----- Mixins ----- //
+
+@mixin transition() {
+   -webkit-transition: all 0.2s ease-in-out;  
+   -moz-transition: all 0.2s ease-in-out;  
+   -o-transition: all 0.2s ease-in-out;  
+   transition: all 0.2s ease-in-out;
+}
+
+@mixin transitionSimple() {
+   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   -o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+@mixin transition3() {
+   -webkit-transition: all 0.3s ease-in-out;  
+   -moz-transition: all 0.3s ease-in-out;  
+   -o-transition: all 0.3s ease-in-out;  
+   transition: all 0.3s ease-in-out;
+}
+
+@mixin transition5() {
+   -webkit-transition: all 0.5s ease-in-out;  
+   -moz-transition: all 0.5s ease-in-out;  
+   -o-transition: all 0.5s ease-in-out;  
+   transition: all 0.5s ease-in-out;
+}
+
+@mixin transitionCustom($time) {
+   -webkit-transition: all $time ease-in-out;  
+   -moz-transition: all $time ease-in-out;  
+   -o-transition: all $time ease-in-out;  
+   transition: all $time ease-in-out;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1300px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+@mixin bodyfont() {
+  font-family: $body-font-family;
+}
+
+@mixin bodymedium() {
+  font-family: $bodyfont;
+}
+
+@mixin bodybold() {
+  font-family: $bodyfont;
+}
+
+@mixin titlefont() {
+  font-family: $header-font-family;
+}
+
+@mixin grid-pod-color($color) {
+    h3 {
+      color: $color;
+    }
+}
+
+@mixin standard-text() {
+  font-family: $body-font-family;
+  font-size: rem-calc(18);
+  line-height: rem-calc(28);
+  font-weight: 200;
+  color: $text-color;
+}
+
+@mixin small-text() {
+    font-family: $body-font-family;
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+    font-weight: $global-weight-normal;
+}
+
+@mixin meta-text() {
+    font-family: $body-font-family;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    letter-spacing: rem-calc(3);
+    font-weight: $header-font-weight;
+    text-transform: uppercase;
+}
+
+@mixin h1-text() {
+    font-size: rem-calc(72);
+    line-height: rem-calc(82);
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    color: $text-color;
+}
+
+@mixin h2-text() {
+    font-size: rem-calc(60);
+    line-height: rem-calc(70);
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    color: $text-color;
+}
+
+@mixin h3-text() {
+    font-size: rem-calc(24);
+    line-height: rem-calc(34);
+    font-family: $header-font-family;
+    font-weight: $global-weight-normal;
+    color: $text-color;
+}
+
+@mixin h4-text() {
+    font-size: rem-calc(20);
+    line-height: rem-calc(33);
+    font-family: $header-font-family;
+    font-weight: $global-weight-normal;
+    color: $text-color;
+}
+
+@mixin button-style() {
+    display: inline-block;
+    cursor: pointer;
+    font-family: $header-font-family;
+    font-size: rem-calc(24);
+    line-height: rem-calc(24);
+    font-weight: 700;
+    padding: rem-calc(12 20 12);
+    background-color: $primary;
+    border: $primary 1px solid;
+    color: $white;
+    border-radius: rem-calc(3);
+    text-decoration: none;
+    @include transitionSimple;
+    a {
+        color: $white;
+    }
+    &:hover {
+        background-color: $black;
+        border: $black 1px solid;
+        color: $white;
+        a {
+            color: $white;
+        }
+    }
+    &.button-small,
+    > .button-small {
+        font-size: rem-calc(15);
+        line-height: rem-calc(15);
+        padding: rem-calc(11 15 8);
+    }
+    &.secondary,
+    > .secondary {
+        border: $secondary 1px solid;
+        background-color: transparent;
+        color: $secondary;
+        a {
+            color: $secondary;
+        }
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+            a {
+                color: $white;
+            }
+        }
+    }
+    &.button-black {
+        background-color: $black;
+        border: $black 1px solid;
+        color: $white;
+        a {
+            color: $white;
+        }
+    }
+}

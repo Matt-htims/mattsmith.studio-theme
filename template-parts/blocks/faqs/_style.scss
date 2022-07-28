@@ -1,0 +1,51 @@
+.faqs-wrap {
+	width: 100%;
+	@include xy-grid();
+	@include flex-align(center, top);
+	.faq {
+		@include xy-cell(12);
+		border-bottom: 1px solid $offwhite-dark;
+		font-weight: 700;
+		padding-bottom: rem-calc(30);
+		@include breakpoint(medlarge) {
+			@include xy-cell(10);
+		}
+		@include breakpoint(large) {
+			@include xy-cell(8);
+		}
+		.faq-header {
+			padding: rem-calc(50 0 20);
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.fh-name {
+				margin: 0;
+			}
+			.fh-arrow {
+				img.circle-plus {
+					display: inline-block;
+				}
+				img.circle-minus {
+					display: none;
+				}
+			}
+		}
+		.faq-body {
+			width: 100%;
+			display: none;
+		}
+		&.faq-on {
+			.faq-header {
+				.fh-arrow {
+					img.circle-plus {
+						display: none;
+					}
+					img.circle-minus {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.pic-text-wrap {
+	width: 100%;
+	margin-top: rem-calc(50);
+	.pic-text {
+		@include xy-grid();
+		@include flex-align(center, middle);
+		width: 100%;
+		margin: 0;
+		margin-bottom: rem-calc(50);
+		.pic-text-pic {
+			@include xy-cell(12);
+			img {
+				border-radius: rem-calc(10);
+			}
+			@include breakpoint(medium) {
+				@include xy-cell(5);
+			}
+			@include breakpoint(large) {
+				@include xy-cell(4);
+			}
+		}
+		.pic-text-text {
+			@include xy-cell(12);
+			@include breakpoint(medium) {
+				@include xy-cell(7);
+			}
+			@include breakpoint(large) {
+				@include xy-cell(6);
+			}
+			h3 {
+				margin: rem-calc(20 0 30);
+			}
+		}
+	}
+	&:not(.pic-text-wrap-switch) {
+		.pic-text:nth-child(2n+2) {
+			@include breakpoint(medium) {
+				.pic-text-pic {
+					order: 2;
+				}
+				.pic-text-text {
+					order: 1;
+				}
+			}
+		}
+	}
+	&.pic-text-wrap-switch {
+		.pic-text:nth-child(2n+1) {
+			@include breakpoint(medium) {
+				.pic-text-pic {
+					order: 2;
+				}
+				.pic-text-text {
+					order: 1;
+				}
+			}
+		}
+	}
+}

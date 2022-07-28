@@ -1,0 +1,43 @@
+.logo-grid {
+	@include xy-grid();
+	@include flex-align(left, center);
+	.client-pod {
+		@include xy-cell(12);
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: rem-calc(25);
+		margin-bottom: rem-calc(25);
+		@include breakpoint(480) {
+			@include xy-cell(1 of 2);
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(1 of 3);
+		}
+		@include breakpoint(medlarge) {
+			@include xy-cell(1 of 4);
+		}
+		@include breakpoint(large) {
+			@include xy-cell(1 of 5);
+		}
+		@include breakpoint(xlarge) {
+			@include xy-cell(1 of 6);
+		}
+		@include breakpoint(xxlarge) {
+			@include xy-cell(1 of 7);
+		}
+		img {
+			width: rem-calc(200);
+			margin: 0;
+			@include transition;
+		}
+		&.client-pod-hoverable {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+// ----- Spacer ----- //
+
+.wp-block-spacer,
+.spacer {
+	display: block;
+	width: 100%;
+	margin: 0;
+	&.spacer-xxsmall {
+		height: rem-calc(30);
+	}
+	&.spacer-xsmall {
+		height: rem-calc(50);
+	}
+	&.spacer-small {
+		height: rem-calc(50);
+		@include breakpoint(medium) {
+			height: rem-calc(60);
+		}
+		@include breakpoint(large) {
+			height: rem-calc(75);
+		}
+	}
+	&.spacer-medium {
+		height: rem-calc(50);
+		@include breakpoint(medium) {
+			height: rem-calc(75);
+		}
+		@include breakpoint(large) {
+			height: rem-calc(100);
+		}
+	}
+	&.spacer-mediumlarge {
+		height: rem-calc(60);
+		@include breakpoint(medium) {
+			height: rem-calc(90);
+		}
+		@include breakpoint(large) {
+			height: rem-calc(120);
+		}
+	}
+	&.spacer-large {
+		height: rem-calc(75);
+		@include breakpoint(medium) {
+			height: rem-calc(100);
+		}
+		@include breakpoint(large) {
+			height: rem-calc(150);
+		}
+	}
+	&.spacer-xlarge {
+		height: rem-calc(100);
+		@include breakpoint(medium) {
+			height: rem-calc(150);
+		}
+		@include breakpoint(large) {
+			height: rem-calc(200);
+		}
+		@include breakpoint(xxlarge) {
+			height: rem-calc(250);
+		}
+	}
+	&.spacer-mob-only {
+		@include breakpoint(medium) {
+			height: 0 !important;
+		}
+	}
+}
