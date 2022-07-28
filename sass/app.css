@@ -8041,25 +8041,29 @@ body {
 }
 .header button {
   font-family: "Inter", sans-serif;
-  padding: 10px 20px;
+  padding: 10px 18px;
   font-size: 0.8rem;
   font-weight: 500;
   border-radius: 50px;
 }
+@media (min-width: 600px) {
+  .header button {
+    margin-left: 2.4rem;
+  }
+}
 @media (min-width: 900px) {
   .header button {
     font-size: 1rem;
-    margin-left: 2.4rem;
-    padding: 0.8rem;
+    padding: 14px 20px;
   }
 }
 .header.header-scrolled {
   background-color: #FCFCFD;
-  height: 2.5rem;
+  height: 4.25rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .header.header-scrolled {
-    height: 4rem;
+    height: 4.5rem;
   }
 }
 .header.header-scrolled .notice-banner {
@@ -8072,12 +8076,7 @@ body {
 .header .header-main {
   max-width: 81rem;
   margin: auto;
-  padding: 0.75rem 0;
-}
-@media print, screen and (min-width: 64em) {
-  .header .header-main {
-    padding: 1rem 0;
-  }
+  padding: 1rem 0;
 }
 .header .header-wrap {
   display: flex;
