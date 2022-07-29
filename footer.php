@@ -12,10 +12,6 @@
 
 </div><!-- .body-area -->
 
-
-<?php include(TEMPLATEPATH."/includes/newsletter.php");?>
-
-
 <div id="footer">
 
     <div class="container">
