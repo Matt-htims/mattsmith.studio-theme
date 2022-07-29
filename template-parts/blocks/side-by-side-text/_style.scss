@@ -1,3 +1,25 @@
-.sbscontainer {
+.sbs-container {
+
+    @include for-tablet-portrait-up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     
+    .sbs-large {
+
+        h2 {
+            font-family: $space-grotesk;
+            color: $blue-darkest;
+            margin: 0;
+            font-size: rem-calc(33);
+            line-height: rem-calc(43);
+            font-weight: 400;
+        }
+        
+    }
+
+    .sbs-small {
+
+    }
 }

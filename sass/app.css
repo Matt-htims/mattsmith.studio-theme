@@ -11627,6 +11627,7 @@ a.tab-link {
 .m-wrap .m-text p {
   font-size: 2.15rem;
   margin-bottom: 0.25rem;
+  color: #1C264A;
 }
 @media (min-width: 600px) {
   .m-wrap .m-text p {
@@ -11645,4 +11646,20 @@ a.tab-link {
   .m-wrap .m-text h1 {
     font-size: 1.9rem;
   }
+}
+
+@media (min-width: 600px) {
+  .sbs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.sbs-container .sbs-large h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1C264A;
+  margin: 0;
+  font-size: 1.65rem;
+  line-height: 2.15rem;
+  font-weight: 400;
 }

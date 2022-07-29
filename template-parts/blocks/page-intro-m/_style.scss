@@ -104,6 +104,7 @@
         p {
             font-size: rem-calc(43);
             margin-bottom: rem-calc(5);
+            color: $blue-darkest;
 
             @include for-tablet-portrait-up {
                 font-size: rem-calc(58);

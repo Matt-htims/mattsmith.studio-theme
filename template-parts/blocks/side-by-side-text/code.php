@@ -11,29 +11,29 @@
 ?>
 
 <div class="container">
-<div class="sbs-container">
+    <div class="sbs-container">
 
-    <div class="sbs-large">
+        <div class="sbs-large">
 
-        <?php if (get_field('large_text')) { ?>
+            <?php if (get_field('large_text')) { ?>
 
-            <h2><?php the_field('large_text'); ?></h2>
+                <h2 class="large-text"><?php the_field('large_text'); ?></h2>
 
-        <?php } ?>
+            <?php } ?>
 
-    </div>
+        </div>
 
-    <div class="sbs-small">
+        <div class="sbs-small">
 
-        <?php if (get_field('small_text')) { ?>
+            <?php if (get_field('small_text')) { ?>
+                
+                <p><?php the_field('small_text'); ?></p>
             
-            <p><?php the_field('small_text'); ?></p>
-        
-        <?php } ?>
+            <?php } ?>
 
-    </div>
+        </div>
 
-    <?php the_field('text'); ?>
-  
-</div><!-- .large-text -->
+        <?php the_field('text'); ?>
+    
+    </div><!-- .large-text -->
 </div>
