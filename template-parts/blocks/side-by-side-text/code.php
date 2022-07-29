@@ -17,7 +17,7 @@
 
             <?php if (get_field('large_text')) { ?>
 
-                <h2 class="large-text"><?php the_field('large_text'); ?></h2>
+               <?php the_field('large_text'); ?>
 
             <?php } ?>
 
@@ -27,7 +27,7 @@
 
             <?php if (get_field('small_text')) { ?>
                 
-                <p><?php the_field('small_text'); ?></p>
+                <div class="sbs-small-inner"><?php the_field('small_text'); ?></div>
             
             <?php } ?>
 

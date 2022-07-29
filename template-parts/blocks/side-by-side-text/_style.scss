@@ -7,6 +7,7 @@
     }
     
     .sbs-large {
+        width: 100%;
 
         h2 {
             font-family: $space-grotesk;
@@ -15,11 +16,25 @@
             font-size: rem-calc(33);
             line-height: rem-calc(43);
             font-weight: 400;
+
+            @include for-tablet-portrait-up {
+                width: 85%;
+            }
         }
         
     }
 
     .sbs-small {
+        width: 100%;
+
+        .sbs-small-inner {
+
+            @include for-tablet-portrait-up {
+                width: 85%;
+                margin-left: auto;
+            }
+        }
+
 
     }
 }

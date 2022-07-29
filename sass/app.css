@@ -11655,6 +11655,9 @@ a.tab-link {
     justify-content: space-between;
   }
 }
+.sbs-container .sbs-large {
+  width: 100%;
+}
 .sbs-container .sbs-large h2 {
   font-family: "Space Grotesk", sans-serif;
   color: #1C264A;
@@ -11662,4 +11665,18 @@ a.tab-link {
   font-size: 1.65rem;
   line-height: 2.15rem;
   font-weight: 400;
+}
+@media (min-width: 600px) {
+  .sbs-container .sbs-large h2 {
+    width: 85%;
+  }
+}
+.sbs-container .sbs-small {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .sbs-container .sbs-small .sbs-small-inner {
+    width: 85%;
+    margin-left: auto;
+  }
 }
