@@ -11655,8 +11655,19 @@ a.tab-link {
     justify-content: space-between;
   }
 }
+@media (min-width: 1300px) {
+  .sbs-container {
+    margin-top: 78px;
+  }
+}
 .sbs-container .sbs-large {
   width: 100%;
+  margin-bottom: 1.65rem;
+}
+@media (min-width: 600px) {
+  .sbs-container .sbs-large {
+    margin-bottom: 0;
+  }
 }
 .sbs-container .sbs-large h2 {
   font-family: "Space Grotesk", sans-serif;
@@ -11668,7 +11679,13 @@ a.tab-link {
 }
 @media (min-width: 600px) {
   .sbs-container .sbs-large h2 {
-    width: 85%;
+    width: 90%;
+  }
+}
+@media (min-width: 900px) {
+  .sbs-container .sbs-large h2 {
+    font-size: 2.15rem;
+    line-height: 2.65rem;
   }
 }
 .sbs-container .sbs-small {
@@ -11676,7 +11693,23 @@ a.tab-link {
 }
 @media (min-width: 600px) {
   .sbs-container .sbs-small .sbs-small-inner {
-    width: 85%;
+    width: 95%;
     margin-left: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .switched-sides {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 600px) {
+  .switched-sides .sbs-large h2 {
+    margin-left: auto;
+  }
+}
+@media (min-width: 600px) {
+  .switched-sides .sbs-small .sbs-small-inner {
+    margin-right: auto;
   }
 }

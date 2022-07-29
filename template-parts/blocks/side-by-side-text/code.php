@@ -11,8 +11,8 @@
 ?>
 
 <div class="container">
-    <div class="sbs-container">
-
+    <div class="sbs-container <?php if(!get_field('left_start')) { ?>switched-sides<?php } ?>">
+        
         <div class="sbs-large">
 
             <?php if (get_field('large_text')) { ?>
