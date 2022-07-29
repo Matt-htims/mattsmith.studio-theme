@@ -7,11 +7,12 @@
 }
 
 .m-wrap {
-    margin-top: rem-calc(90);
+    margin-top: 0;
     width: 100%;
     display: block;
     
     @include for-tablet-landscape-up {
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,6 +20,7 @@
     }
 
    @include for-desktop-up {
+        margin-top: rem-calc(90);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -37,15 +39,17 @@
         overflow: visible;
         margin-bottom: rem-calc(40);
 
+
         @include for-desktop-up {
             height: 80%;
             padding-right: rem-calc(40);
+            margin-left: 20px;
         }
             
         .blob {
             z-index: 4;
             position: absolute;
-            top: rem-calc(70);
+            top: -3%;
             left: 0;
             right: 0;
             margin-left: auto;
@@ -53,14 +57,14 @@
             height: 480px;
 
             @include for-tablet-portrait-up {
-                top: 10%;
+                top: 5%;
                 height: 67%;
                 width: rem-calc(580);
             }
 
             @include for-desktop-up {
             top: 10%;
-            left: -55px;
+            left: -30px;
             margin: 0;
             height: 95%;
             width: rem-calc(600);

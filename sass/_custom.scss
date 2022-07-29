@@ -118,6 +118,7 @@ body {
 
 .header {
 	font-size: rem-calc(20);
+	margin: 0 25px;
 	font-weight: 500;
 	position: sticky;
 	top: 0;
@@ -183,7 +184,7 @@ body {
 		z-index: -1;
 	}
 	.header-main {
-		max-width: rem-calc(1620);
+		max-width: rem-calc(1670);
 		margin: auto;
 		padding: rem-calc(20 0);
 		
@@ -195,7 +196,7 @@ body {
 	}
 	.header-left {
 		
-		@include xy-cell('shrink');
+		// @include xy-cell('shrink');
 		
 		.main-link {
 			font-size: rem-calc(24);
@@ -212,7 +213,7 @@ body {
 		}
 	}
 	.header-right {
-		@include xy-cell('shrink');
+		// @include xy-cell('shrink');
 		display: flex;
 		align-items: center;
 		.menu-main-menu-container {

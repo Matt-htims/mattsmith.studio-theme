@@ -10,7 +10,7 @@
  */
 ?>
 
-
+<div class="container">
 <div class="sbs-container">
 
     <div class="sbs-large">
@@ -36,4 +36,4 @@
     <?php the_field('text'); ?>
   
 </div><!-- .large-text -->
-
+</div>

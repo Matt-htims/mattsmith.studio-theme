@@ -8004,6 +8004,7 @@ body {
 
 .header {
   font-size: 1rem;
+  margin: 0 25px;
   font-weight: 500;
   position: sticky;
   top: 0;
@@ -8074,7 +8075,7 @@ body {
   z-index: -1;
 }
 .header .header-main {
-  max-width: 81rem;
+  max-width: 83.5rem;
   margin: auto;
   padding: 1rem 0;
 }
@@ -8083,12 +8084,6 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-}
-.header .header-left {
-  flex: 0 0 auto;
-  width: auto;
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
 }
 .header .header-left .main-link {
   font-size: 1.2rem;
@@ -8102,10 +8097,6 @@ body {
   display: none;
 }
 .header .header-right {
-  flex: 0 0 auto;
-  width: auto;
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
   display: flex;
   align-items: center;
 }
@@ -11546,7 +11537,7 @@ a.tab-link {
 }
 
 .m-wrap {
-  margin-top: 4.5rem;
+  margin-top: 0;
   width: 100%;
   display: block;
 }
@@ -11560,6 +11551,7 @@ a.tab-link {
 }
 @media (min-width: 1300px) {
   .m-wrap {
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11581,12 +11573,13 @@ a.tab-link {
   .m-wrap .m-image {
     height: 80%;
     padding-right: 2rem;
+    margin-left: 20px;
   }
 }
 .m-wrap .m-image .blob {
   z-index: 4;
   position: absolute;
-  top: 3.5rem;
+  top: -3%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -11595,7 +11588,7 @@ a.tab-link {
 }
 @media (min-width: 600px) {
   .m-wrap .m-image .blob {
-    top: 10%;
+    top: 5%;
     height: 67%;
     width: 29rem;
   }
@@ -11603,7 +11596,7 @@ a.tab-link {
 @media (min-width: 1300px) {
   .m-wrap .m-image .blob {
     top: 10%;
-    left: -55px;
+    left: -30px;
     margin: 0;
     height: 95%;
     width: 30rem;
