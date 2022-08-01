@@ -10430,167 +10430,6 @@ section.section-bg-green .line-link-wrapper a.line-link:after {
   }
 }
 
-section.page-intro {
-  position: relative;
-  padding: 0;
-  background-color: #FF821B;
-  color: #ffffff;
-  margin-bottom: 7.5rem;
-}
-section.page-intro:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 50%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-  z-index: 5;
-}
-section.page-intro .page-intro-background-pattern {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../images/wavy-dots.png");
-  background-repeat: repeat;
-}
-section.page-intro .page-intro-background-pattern:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-  z-index: 3;
-}
-section.page-intro .page-intro-background-pattern-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FF821B;
-  mix-blend-mode: multiply;
-}
-section.page-intro .page-intro-wrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-section.page-intro .page-intro-wrap .page-intro-image,
-section.page-intro .page-intro-wrap .page-intro-text {
-  position: relative;
-  width: calc(100% - 2.5rem);
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
-  width: 100%;
-  margin: 0;
-  z-index: 10;
-}
-section.page-intro .page-intro-wrap .page-intro-image h1,
-section.page-intro .page-intro-wrap .page-intro-text h1 {
-  position: relative;
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
-section.page-intro .page-intro-wrap .page-intro-image p,
-section.page-intro .page-intro-wrap .page-intro-text p {
-  color: #ffffff;
-}
-section.page-intro .page-intro-wrap .page-intro-text {
-  position: relative;
-  z-index: 10;
-  margin-bottom: 2.5rem;
-}
-@media print, screen and (min-width: 40em) {
-  section.page-intro .page-intro-wrap .page-intro-text {
-    order: 1;
-    width: calc(41.6666666667% - 2.5rem);
-    margin-right: 1.25rem;
-    margin-left: 1.25rem;
-  }
-  section.page-intro .page-intro-wrap .page-intro-image {
-    order: 2;
-    width: calc(50% - 2.5rem);
-    margin-right: 1.25rem;
-    margin-left: 1.25rem;
-    margin-top: 3.5rem;
-    margin-bottom: -4rem;
-  }
-  section.page-intro .page-intro-wrap .page-intro-image img {
-    border-radius: 0.75rem;
-    -webkit-box-shadow: 0px 0px 50px 0px rgba(35, 38, 40, 0.5);
-    box-shadow: 0px 0px 50px 0px rgba(35, 38, 40, 0.5);
-  }
-}
-section.page-intro #breadcrumbs {
-  display: block;
-}
-section.page-intro #breadcrumbs > span > span {
-  display: inline-flex;
-  font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  font-weight: normal;
-  color: #ffffff;
-}
-section.page-intro #breadcrumbs > span > span a {
-  background-color: #FF821B;
-  color: #ffffff;
-  padding: 0 0.5rem;
-  font-weight: bold;
-}
-section.page-intro #breadcrumbs > span > span > span {
-  padding: 0 0.5rem;
-  background-color: #030C23;
-}
-section.page-intro #breadcrumbs > span > span.breadcrumb_last {
-  display: none;
-}
-
-section.page-intro.page-intro-style-background-image {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 22.5rem;
-  margin-bottom: 3.5rem;
-}
-section.page-intro.page-intro-style-background-image .container {
-  min-height: 22.5rem;
-}
-section.page-intro.page-intro-style-background-image .container .page-intro-wrap {
-  min-height: 22.5rem;
-}
-section.page-intro.page-intro-style-background-image .page-intro-background-image-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FF821B;
-  opacity: 0.25;
-  z-index: 1;
-}
-section.page-intro.page-intro-style-background-image:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-  z-index: 3;
-}
-
 .parallax-image {
   width: 100%;
   height: 50vh;
@@ -11690,6 +11529,12 @@ a.tab-link {
 }
 .sbs-container .sbs-small {
   width: 100%;
+}
+@media (min-width: 900px) {
+  .sbs-container .sbs-small .sbs-small-inner p {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 @media (min-width: 600px) {
   .sbs-container .sbs-small .sbs-small-inner {

@@ -43,6 +43,15 @@
 
         .sbs-small-inner {
 
+            @include for-tablet-landscape-up {
+                p {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+            
+            
+
             @include for-tablet-portrait-up {
                 width: 95%;
                 margin-left: auto;

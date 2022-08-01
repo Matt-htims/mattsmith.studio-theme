@@ -1752,29 +1752,6 @@
       "oAP" : "\/template-parts\/blocks\/page-intro-m\/code.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/page-intro\/_style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/template-parts\/blocks\/page-intro\/_style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/template-parts\/blocks\/page-intro\/code.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/page-intro\/code.php",
-      "oF" : 0
-    },
     "\/template-parts\/blocks\/parallax-image\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -2026,6 +2003,29 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/testimonial\/code.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/triple-explainer\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/template-parts\/blocks\/triple-explainer\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/template-parts\/blocks\/triple-explainer\/code.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/triple-explainer\/code.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/video-link\/_style.scss" : {

@@ -531,7 +531,20 @@ function register_acf_block_types() {
        'category'          => 'formatting',
        'icon'              => 'star-filled',
        'mode'              => 'edit',
-       'keywords'          => array( 'page-intro-m', 'quote' ),
+       'keywords'          => array( 'side-by-side-text', 'quote' ),
+   ));
+
+   // register a triple explainer block.
+   acf_register_block_type(array(
+       'name'              => 'triple-explainer',
+       'title'             => __('Triple explainer'),
+       'description'       => __('A custom triple explainer block.'),
+       'render_template'   => 'template-parts/blocks/triple-explainer/code.php',
+       //'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/triple-explainer/style.css',
+       'category'          => 'formatting',
+       'icon'              => 'star-filled',
+       'mode'              => 'edit',
+       'keywords'          => array( 'triple-explainer', 'quote' ),
    ));
 
    // register a video-link block.
