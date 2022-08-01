@@ -143,7 +143,7 @@
     font-size: rem-calc(24);
     line-height: rem-calc(24);
     font-weight: 500;
-    padding: rem-calc(14 22 14);
+    padding: rem-calc(15 25);
     background-color: $primary;
     border: $primary 1px solid;
     color: $white;
@@ -161,6 +161,7 @@
             color: $white;
         }
     }
+
     &.button-small,
     > .button-small {
         font-size: rem-calc(15);

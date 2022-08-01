@@ -10,35 +10,34 @@
  */
 ?>
 
-<div class="container">
-    <div class="ctas-container">
-        
-        <div class="ctas-text">
 
-            <?php if (get_field('main_text')) { ?>
-
-               <h3><?php the_field('main_text'); ?></h3>
-
-            <?php } ?>
-
-            <?php if (get_field('sub_text')) { ?>
-
-               <p><?php the_field('sub_text'); ?></p>
-
-            <?php } ?>
-
-        </div>
-
-        <div class="ctas-button">
-
-            <?php if (get_field('button_text') & (get_field('button_link'))) { ?>
-
-
-                <a href="<?php the_field('button_link') ?>"><button><?php the_field('button_text') ?></button></a>
-            
-            <?php } ?>
-
-        </div>
+<div class="ctas-container">
     
-    </div><!-- .large-text -->
-</div>
+    <div class="ctas-text">
+
+        <?php if (get_field('main_text')) { ?>
+
+            <h3><?php the_field('main_text'); ?></h3>
+
+        <?php } ?>
+
+        <?php if (get_field('sub_text')) { ?>
+
+            <p><?php the_field('sub_text'); ?></p>
+
+        <?php } ?>
+
+    </div>
+
+    <div class="ctas-button">
+
+        <?php if (get_field('button_text') & (get_field('button_link'))) { ?>
+
+
+            <a href="<?php the_field('button_link') ?>"><button><?php the_field('button_text') ?></button></a>
+        
+        <?php } ?>
+
+    </div>
+
+</div><!-- .large-text -->
