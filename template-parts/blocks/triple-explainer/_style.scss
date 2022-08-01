@@ -8,20 +8,20 @@
     h2 {
         margin-top: 0;
         font-size: rem-calc(38);
-        margin-bottom: rem-calc(60);
+        margin-bottom: rem-calc(80);
     }
 
     @include for-tablet-landscape-up {
-        padding: rem-calc(70 20 80 20);
+        padding: rem-calc(70 20 30 20);
 
         h2 {
-            margin-bottom: rem-calc(80);
+            margin-bottom: rem-calc(100);
             font-size: rem-calc(48);
         }
     }
 
     @include for-desktop-up {
-        padding: rem-calc(70 40 80 40);
+        padding: rem-calc(70 40 30 40);
         margin-top: rem-calc(80);
     }
 
@@ -45,6 +45,10 @@
 
             &:not(:last-child) {
                 border-bottom: 1px solid $blue-light;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
 
 

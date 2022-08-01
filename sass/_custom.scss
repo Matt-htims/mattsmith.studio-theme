@@ -1419,6 +1419,17 @@ button.slick-next {
 	}
 }
 
+.footer-text {
+	margin: 0;
+	text-align: center;
+	color: $offwhite;
+	font-size: rem-calc(16);
+}
+
+.footer-container {
+	padding: rem-calc(15);
+}
+
 #footer {
 	background-color: $offblack;
 	color: $white;
@@ -1502,9 +1513,9 @@ svg.social {
 }
 
 .bottom-bar {
-	@include padding(1,null,1);
-	background-color: $black;
-	@include small-text();
+	// @include padding(1,null,1);
+	background-color: $blue-darkest;
+	// @include small-text();
 	color: $grey;
 	a {
 		color: $grey;

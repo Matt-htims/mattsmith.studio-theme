@@ -9433,6 +9433,17 @@ button.slick-next {
   display: none;
 }
 
+.footer-text {
+  margin: 0;
+  text-align: center;
+  color: #FCFCFD;
+  font-size: 0.8rem;
+}
+
+.footer-container {
+  padding: 0.75rem;
+}
+
 #footer {
   background-color: #3B4254;
   color: #ffffff;
@@ -9539,13 +9550,7 @@ svg.social:hover #icon {
 }
 
 .bottom-bar {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  background-color: #030C23;
-  font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  font-weight: normal;
+  background-color: #1C264A;
   color: #A8AFC4;
 }
 .bottom-bar a {
@@ -11568,20 +11573,20 @@ a.tab-link {
 .te-wrap h2 {
   margin-top: 0;
   font-size: 1.9rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 900px) {
   .te-wrap {
-    padding: 3.5rem 1rem 4rem 1rem;
+    padding: 3.5rem 1rem 1.5rem 1rem;
   }
   .te-wrap h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     font-size: 2.4rem;
   }
 }
 @media (min-width: 1300px) {
   .te-wrap {
-    padding: 3.5rem 2rem 4rem 2rem;
+    padding: 3.5rem 2rem 1.5rem 2rem;
     margin-top: 4rem;
   }
 }
@@ -11604,6 +11609,9 @@ a.tab-link {
 }
 .te-wrap .te-text .te-text-outer:not(:last-child) {
   border-bottom: 1px solid #DEE1ED;
+}
+.te-wrap .te-text .te-text-outer:last-child {
+  margin-bottom: 0;
 }
 @media (min-width: 900px) {
   .te-wrap .te-text .te-text-outer {
