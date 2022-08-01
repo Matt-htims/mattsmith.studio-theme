@@ -8004,7 +8004,7 @@ body {
 
 .header {
   font-size: 1rem;
-  margin: 0 25px;
+  padding: 0 25px;
   font-weight: 500;
   position: sticky;
   top: 0;
@@ -8077,7 +8077,7 @@ body {
 .header .header-main {
   max-width: 83.5rem;
   margin: auto;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 .header .header-wrap {
   display: flex;

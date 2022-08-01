@@ -118,7 +118,7 @@ body {
 
 .header {
 	font-size: rem-calc(20);
-	margin: 0 25px;
+	padding: 0 25px;
 	font-weight: 500;
 	position: sticky;
 	top: 0;
@@ -186,7 +186,7 @@ body {
 	.header-main {
 		max-width: rem-calc(1670);
 		margin: auto;
-		padding: rem-calc(20 0);
+		padding: rem-calc(20 20);
 		
 		
 	}
