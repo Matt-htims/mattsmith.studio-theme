@@ -560,6 +560,19 @@ function register_acf_block_types() {
        'keywords'          => array( 'cta-section', 'quote' ),
    ));
 
+   // register an info gallery block.
+   acf_register_block_type(array(
+       'name'              => 'info-gallery',
+       'title'             => __('Info gallery'),
+       'description'       => __('A custom info gallery block.'),
+       'render_template'   => 'template-parts/blocks/info-gallery/code.php',
+       //'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/info-gallery/style.css',
+       'category'          => 'formatting',
+       'icon'              => 'star-filled',
+       'mode'              => 'edit',
+       'keywords'          => array( 'info-gallery', 'quote' ),
+   ));
+
    // register a video-link block.
    acf_register_block_type(array(
        'name'              => 'video-link',

@@ -1637,6 +1637,29 @@
       "oAP" : "\/template-parts\/blocks\/hero-gallery\/code.php",
       "oF" : 0
     },
+    "\/template-parts\/blocks\/info-gallery\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/template-parts\/blocks\/info-gallery\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/template-parts\/blocks\/info-gallery\/code.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/info-gallery\/code.php",
+      "oF" : 0
+    },
     "\/template-parts\/blocks\/job-list\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,
