@@ -44,9 +44,13 @@
                         <h3><?php the_sub_field('row_title'); ?></h3>
 
                         <p class="te-text-main"><?php the_sub_field('row_copy'); ?></p>
+                        <div class="">
 
-                        <p class="te-text-sub"><?php the_sub_field('row_bottom') ?></p>
+                            <p class="te-text-sub"><?php the_sub_field('row_bottom') ?></p>
                         
+                            <p class="te-text-sub-2"><?php the_sub_field('row_bottom_2') ?></p>
+                        
+                        </div>
                     </div><!-- .pic-text-text -->
 		    	
 		        </div>

@@ -3,19 +3,26 @@
     text-align: center;
     background-color: $offwhite-dark;
     border-radius: rem-calc(40);
+    padding: rem-calc(30 0 5 0);
 
     h2 {
         margin-top: 0;
-        font-size: rem-calc(53);
+        font-size: rem-calc(38);
+        margin-bottom: rem-calc(60);
     }
 
     @include for-tablet-landscape-up {
-        padding: rem-calc(70 40 80 40);
-        margin-top: rem-calc(80);
+        padding: rem-calc(70 20 80 20);
 
         h2 {
             margin-bottom: rem-calc(80);
+            font-size: rem-calc(48);
         }
+    }
+
+    @include for-desktop-up {
+        padding: rem-calc(70 40 80 40);
+        margin-top: rem-calc(80);
     }
 
     .te-text {
@@ -30,22 +37,77 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: rem-calc(70);
+            width: 90%;
+            margin: auto;
+            margin-bottom: rem-calc(50);
+            padding-bottom: rem-calc(50);
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $blue-light;
+            }
+
+
+            @include for-tablet-landscape-up {
+                width: 100%;
+                margin-bottom: 0;
+                &:not(:last-child) {
+                    border: none;
+                }
+    
+            }
             
             .te-text-image {
-                width: 80px;
+                width: rem-calc(60);
+
+                @include for-desktop-up {
+                    width: rem-calc(80);
+                }
+                
 
             }
 
             .te-text-text {
+                
+
+                @include for-tablet-landscape-up {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: rem-calc(360);
+                }
+
+                @include for-desktop-up {
+                    height: rem-calc(320);
+                }
+
+                h3 {
+                    font-weight: 500;
+                    color: $blue-darkest;
+                }
 
                 .te-text-main {
-                    width: 80%;
+                    width: 90%;
                     margin: auto;
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
+                    margin-top: 0;
+
+                    @include for-tablet-landscape-up {
+                        font-size: rem-calc(18);
+                        width: 80%;
+                    }
                 }
 
                 .te-text-sub {
-                   color: #848BAA;
+                    font-size: 16px;
+                    color: #656B82;
+                    margin-bottom: rem-calc(10);
+                }
+
+                .te-text-sub-2 {
+                    font-weight: 600;
+                    // color: #656B82;
+                    margin: 0;
                 }
             }
         }

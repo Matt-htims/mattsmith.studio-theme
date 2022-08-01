@@ -11563,18 +11563,26 @@ a.tab-link {
   text-align: center;
   background-color: #F2F3F8;
   border-radius: 2rem;
+  padding: 1.5rem 0 0.25rem 0;
 }
 .te-wrap h2 {
   margin-top: 0;
-  font-size: 2.65rem;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 900px) {
   .te-wrap {
-    padding: 3.5rem 2rem 4rem 2rem;
-    margin-top: 4rem;
+    padding: 3.5rem 1rem 4rem 1rem;
   }
   .te-wrap h2 {
     margin-bottom: 4rem;
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1300px) {
+  .te-wrap {
+    padding: 3.5rem 2rem 4rem 2rem;
+    margin-top: 4rem;
   }
 }
 @media (min-width: 900px) {
@@ -11588,15 +11596,67 @@ a.tab-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3.5rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.te-wrap .te-text .te-text-outer:not(:last-child) {
+  border-bottom: 1px solid #DEE1ED;
+}
+@media (min-width: 900px) {
+  .te-wrap .te-text .te-text-outer {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .te-wrap .te-text .te-text-outer:not(:last-child) {
+    border: none;
+  }
 }
 .te-wrap .te-text .te-text-outer .te-text-image {
-  width: 80px;
+  width: 3rem;
+}
+@media (min-width: 1300px) {
+  .te-wrap .te-text .te-text-outer .te-text-image {
+    width: 4rem;
+  }
+}
+@media (min-width: 900px) {
+  .te-wrap .te-text .te-text-outer .te-text-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18rem;
+  }
+}
+@media (min-width: 1300px) {
+  .te-wrap .te-text .te-text-outer .te-text-text {
+    height: 16rem;
+  }
+}
+.te-wrap .te-text .te-text-outer .te-text-text h3 {
+  font-weight: 500;
+  color: #1C264A;
 }
 .te-wrap .te-text .te-text-outer .te-text-text .te-text-main {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+@media (min-width: 900px) {
+  .te-wrap .te-text .te-text-outer .te-text-text .te-text-main {
+    font-size: 0.9rem;
+    width: 80%;
+  }
 }
 .te-wrap .te-text .te-text-outer .te-text-text .te-text-sub {
-  color: #848BAA;
+  font-size: 16px;
+  color: #656B82;
+  margin-bottom: 0.5rem;
+}
+.te-wrap .te-text .te-text-outer .te-text-text .te-text-sub-2 {
+  font-weight: 600;
+  margin: 0;
 }
