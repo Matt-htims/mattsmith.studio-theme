@@ -7583,17 +7583,17 @@ h4.no-mar {
 button, a.button, li.is-button > a, .wp-block-button > a.wp-block-button__link,
 .gform_wrapper.gravity-theme .gform_footer button, .gform_wrapper.gravity-theme .gform_footer input, .gform_wrapper.gravity-theme .gform_page_footer button, .gform_wrapper.gravity-theme .gform_page_footer input,
 .search-overlay .form-footer input[type=submit] {
+  font-family: "Inter", sans-serif;
   display: inline-block;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 1.2rem;
   line-height: 1.2rem;
-  font-weight: 700;
-  padding: 0.6rem 1rem 0.6rem;
+  font-weight: 500;
+  padding: 0.7rem 1.1rem 0.7rem;
   background-color: #FF821B;
   border: #FF821B 1px solid;
   color: #ffffff;
-  border-radius: 0.15rem;
+  border-radius: 0.4rem;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -8045,7 +8045,7 @@ body {
   padding: 10px 18px;
   font-size: 0.8rem;
   font-weight: 500;
-  border-radius: 50px;
+  border-radius: 2.5rem;
 }
 @media (min-width: 600px) {
   .header button {
@@ -8192,17 +8192,17 @@ body {
   right: 0 !important;
 }
 .header .header-right ul li.is-button a {
+  font-family: "Inter", sans-serif;
   display: inline-block;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 1.2rem;
   line-height: 1.2rem;
-  font-weight: 700;
-  padding: 0.6rem 1rem 0.6rem;
+  font-weight: 500;
+  padding: 0.7rem 1.1rem 0.7rem;
   background-color: #FF821B;
   border: #FF821B 1px solid;
   color: #ffffff;
-  border-radius: 0.15rem;
+  border-radius: 0.4rem;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -11667,4 +11667,15 @@ a.tab-link {
 .te-wrap .te-text .te-text-outer .te-text-text .te-text-sub-2 {
   font-weight: 600;
   margin: 0;
+}
+
+.ctas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ctas-container .ctas-text {
+  text-align: center;
+  margin-bottom: 2.5rem;
 }

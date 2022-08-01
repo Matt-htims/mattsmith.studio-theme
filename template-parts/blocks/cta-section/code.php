@@ -17,13 +17,13 @@
 
             <?php if (get_field('main_text')) { ?>
 
-               <?php the_field('main_text'); ?>
+               <h3><?php the_field('main_text'); ?></h3>
 
             <?php } ?>
 
             <?php if (get_field('sub_text')) { ?>
 
-               <?php the_field('sub_text'); ?>
+               <p><?php the_field('sub_text'); ?></p>
 
             <?php } ?>
 

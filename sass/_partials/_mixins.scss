@@ -137,17 +137,17 @@
 }
 
 @mixin button-style() {
+    font-family: $inter;
     display: inline-block;
     cursor: pointer;
-    font-family: $header-font-family;
     font-size: rem-calc(24);
     line-height: rem-calc(24);
-    font-weight: 700;
-    padding: rem-calc(12 20 12);
+    font-weight: 500;
+    padding: rem-calc(14 22 14);
     background-color: $primary;
     border: $primary 1px solid;
     color: $white;
-    border-radius: rem-calc(3);
+    border-radius: rem-calc(8);
     text-decoration: none;
     @include transitionSimple;
     a {

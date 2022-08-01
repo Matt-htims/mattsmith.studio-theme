@@ -155,7 +155,7 @@ body {
 		padding: 10px 18px;
 		font-size: rem-calc(16);
 		font-weight: 500;
-		border-radius: 50px;
+		border-radius: rem-calc(50);
 		
 		@include for-tablet-portrait-up {
 			margin-left: rem-calc(48);
