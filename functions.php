@@ -546,6 +546,19 @@ function register_acf_block_types() {
        'mode'              => 'edit',
        'keywords'          => array( 'triple-explainer', 'quote' ),
    ));
+   
+   // register a CTA section block.
+   acf_register_block_type(array(
+       'name'              => 'cta-section',
+       'title'             => __('CTA section'),
+       'description'       => __('A custom CTA section block.'),
+       'render_template'   => 'template-parts/blocks/cta-section/code.php',
+       //'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/cta-section/style.css',
+       'category'          => 'formatting',
+       'icon'              => 'star-filled',
+       'mode'              => 'edit',
+       'keywords'          => array( 'cta-section', 'quote' ),
+   ));
 
    // register a video-link block.
    acf_register_block_type(array(
