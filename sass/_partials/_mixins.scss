@@ -145,17 +145,16 @@
     font-weight: 500;
     padding: rem-calc(15 25);
     background-color: $primary;
-    border: $primary 1px solid;
     color: $white;
     border-radius: rem-calc(8);
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
     @include transitionSimple;
     a {
         color: $white;
     }
     &:hover {
-        background-color: $black;
-        border: $black 1px solid;
+        background-color: $blue;
         color: $white;
         a {
             color: $white;
