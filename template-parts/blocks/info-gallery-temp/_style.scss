@@ -3,6 +3,10 @@
     margin-bottom: rem-calc(80);
     text-align: center;
 
+    h2 {
+        font-size: rem-calc(48);
+    }
+
 
     .igt-content {
         margin-top: rem-calc(50);
@@ -43,6 +47,7 @@
                 height: 100%;
                 
                 h3 {
+
                     color: $offwhite;
                     margin-top: rem-calc(10);
                     margin-bottom: rem-calc(16);

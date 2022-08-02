@@ -11717,6 +11717,9 @@ a.tab-link {
   margin-bottom: 4rem;
   text-align: center;
 }
+.igt-wrap h2 {
+  font-size: 2.4rem;
+}
 .igt-wrap .igt-content {
   margin-top: 2.5rem;
   display: grid;
