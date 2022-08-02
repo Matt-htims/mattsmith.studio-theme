@@ -9,6 +9,7 @@
     max-width: rem-calc(1000);
     margin: auto;
     padding: rem-calc(50 40 40 40);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
 
     @include for-tablet-landscape-up {
         padding: rem-calc(90 50 70 50);

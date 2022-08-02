@@ -11576,6 +11576,7 @@ a.tab-link {
   background-color: #F2F3F8;
   border-radius: 2rem;
   padding: 1.5rem 0 0.25rem 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
 }
 .te-wrap h2 {
   margin-top: 0;
@@ -11686,6 +11687,7 @@ a.tab-link {
   max-width: 50rem;
   margin: auto;
   padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
 }
 @media (min-width: 900px) {
   .ctas-container {
