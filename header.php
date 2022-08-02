@@ -84,13 +84,13 @@ $postSlug = $post->post_name;
 
                     <div class="logo-dark">
                     
-                        <a href="<?php echo get_settings('home'); ?>/"><p class='main-link'>Matt Smith</p></a>
+                        <a href="<?php echo get_settings('home'); ?>/"><p class='main-links'>Matt Smith</p></a>
                         
                     </div>
 
                     <div class="logo-light">
                     
-                        <a href="<?php echo get_settings('home'); ?>/"><p class='main-link'>Matt Smith</p></a>
+                        <a href="<?php echo get_settings('home'); ?>/"><p class='main-links'>Matt Smith</p></a>
                         
                     </div><!-- .logo-light -->
                     

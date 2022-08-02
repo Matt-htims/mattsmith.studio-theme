@@ -8087,7 +8087,7 @@ body {
 .header .header-left {
   opacity: 1;
 }
-.header .header-left .main-link {
+.header .header-left .main-links {
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0;
@@ -11744,6 +11744,8 @@ a.tab-link {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.3s;
   height: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 .igt-wrap .igt-content .igt-indiv:hover {
   box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
