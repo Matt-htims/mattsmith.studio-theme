@@ -1,0 +1,67 @@
+.igt-wrap {
+    margin-top: rem-calc(80);
+    margin-bottom: rem-calc(80);
+    text-align: center;
+
+
+    .igt-content {
+        margin-top: rem-calc(50);
+        display: grid;
+        gap: rem-calc(30);
+        text-align: initial;
+
+        @include for-tablet-landscape-up {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .igt-indiv {
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: all 0.3s;
+            height: max-content;
+
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+            }
+
+                img {
+                    flex:none;
+                    width: 100%;
+                    overflow: hidden;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+
+            
+
+            .igt-text {
+                background-color: $blue-darkest;
+                padding: rem-calc(20 30);
+                height: 100%;
+                
+                h3 {
+                    color: $offwhite;
+                    margin-top: 0;
+                    margin-bottom: rem-calc(16);
+                    font-size: rem-calc(20);
+                    font-weight: 500;
+                    line-height: rem-calc(20);
+                }
+
+                p {
+                    color: $offwhite;
+                    font-size: rem-calc(16);
+                    line-height: rem-calc(20);
+                    margin: 0;
+                }
+
+
+            }
+        }
+
+        
+    }
+}

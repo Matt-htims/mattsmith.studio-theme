@@ -11709,3 +11709,56 @@ a.tab-link {
     line-height: 1.7rem;
   }
 }
+.igt-wrap {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.igt-wrap .igt-content {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+  text-align: initial;
+}
+@media (min-width: 900px) {
+  .igt-wrap .igt-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.igt-wrap .igt-content .igt-indiv {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s;
+  height: max-content;
+}
+.igt-wrap .igt-content .igt-indiv:hover {
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+}
+.igt-wrap .igt-content .igt-indiv img {
+  flex: none;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top center;
+}
+.igt-wrap .igt-content .igt-indiv .igt-text {
+  background-color: #1C264A;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+.igt-wrap .igt-content .igt-indiv .igt-text h3 {
+  color: #FCFCFD;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+.igt-wrap .igt-content .igt-indiv .igt-text p {
+  color: #FCFCFD;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 0;
+}

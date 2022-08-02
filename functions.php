@@ -625,6 +625,7 @@ function register_acf_block_types() {
        'icon'              => 'star-filled',
        'mode'              => 'edit',
        'keywords'          => array( 'info-gallery-temp', 'quote' ),
+       'support'           => array( 'anchor' => true ),
    ));
 
    // register a video-link block.
