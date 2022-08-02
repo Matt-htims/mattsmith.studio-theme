@@ -8085,6 +8085,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .header-left {
+  opacity: 1;
+}
 .header .header-left .main-link {
   font-size: 1.2rem;
   font-weight: 500;
@@ -8164,7 +8167,7 @@ body {
   }
 }
 .header .header-right ul li:hover a {
-  color: red;
+  color: #4F5C8D;
 }
 .header .header-right ul li.non-button a {
   position: relative;
@@ -11750,7 +11753,7 @@ a.tab-link {
 }
 .igt-wrap .igt-content .igt-indiv .igt-text h3 {
   color: #FCFCFD;
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 0.8rem;
   font-size: 1rem;
   font-weight: 500;

@@ -195,7 +195,7 @@ body {
 		@include flex-align(justify, middle);
 	}
 	.header-left {
-		
+		opacity: 1;
 		// @include xy-cell('shrink');
 		
 		.main-link {
@@ -252,7 +252,7 @@ body {
 				}
 				&:hover {
 					a {
-						color: red;
+						color: $blue;
 					}
 				}
 				&.non-button a {
