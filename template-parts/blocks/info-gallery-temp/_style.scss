@@ -2,6 +2,7 @@
     margin-top: rem-calc(80);
     margin-bottom: rem-calc(80);
     text-align: center;
+    height: 100%;
 
     h2 {
         font-size: rem-calc(48);
@@ -13,6 +14,7 @@
         display: grid;
         gap: rem-calc(30);
         text-align: initial;
+        height: 100%;
 
         @include for-tablet-landscape-up {
             display: grid;
@@ -25,7 +27,7 @@
             flex-direction: column;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             transition: all 0.3s;
-            height: max-content;
+            height: 100%;
 
             &:hover {
                 box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;

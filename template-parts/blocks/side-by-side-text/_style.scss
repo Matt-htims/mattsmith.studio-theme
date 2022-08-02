@@ -1,5 +1,7 @@
 .sbs-container {
 
+    margin-bottom: rem-calc(60);
+
     @include for-tablet-portrait-up {
         display: flex;
         align-items: center;
@@ -8,6 +10,7 @@
 
     @include for-desktop-up {
         margin-top: 78px;
+        margin-bottom: 0;
     }
     
     .sbs-large {

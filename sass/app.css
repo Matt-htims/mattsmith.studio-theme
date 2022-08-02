@@ -11495,6 +11495,9 @@ a.tab-link {
   }
 }
 
+.sbs-container {
+  margin-bottom: 3rem;
+}
 @media (min-width: 600px) {
   .sbs-container {
     display: flex;
@@ -11505,6 +11508,7 @@ a.tab-link {
 @media (min-width: 1300px) {
   .sbs-container {
     margin-top: 78px;
+    margin-bottom: 0;
   }
 }
 .sbs-container .sbs-large {
@@ -11716,6 +11720,7 @@ a.tab-link {
   margin-top: 4rem;
   margin-bottom: 4rem;
   text-align: center;
+  height: 100%;
 }
 .igt-wrap h2 {
   font-size: 2.4rem;
@@ -11725,6 +11730,7 @@ a.tab-link {
   display: grid;
   gap: 1.5rem;
   text-align: initial;
+  height: 100%;
 }
 @media (min-width: 900px) {
   .igt-wrap .igt-content {
@@ -11737,7 +11743,7 @@ a.tab-link {
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.3s;
-  height: max-content;
+  height: 100%;
 }
 .igt-wrap .igt-content .igt-indiv:hover {
   box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
