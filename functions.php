@@ -1,5 +1,46 @@
 <?php
 
+// My work Post Type
+add_action( 'init', 'register_cpt_work' );
+function register_cpt_work() {
+    $labels = array(
+            'name' => ( 'Work' ),
+            'singular_name' => ( 'Work' ),
+            'add_new' => ( 'Add New' ),
+            'add_new_item' => ( 'Add New Work' ),
+            'edit_item' => ( 'Edit Work' ),
+            'new_item' => ( 'New Work' ),
+            'view_item' => ( 'View Work' ),
+            'search_items' => ( 'Search Work' ),
+            'not_found' => ( 'No Work found' ),
+            'not_found_in_trash' => ( 'No Work found in Trash' ),
+            'parent_item_colon' => ( 'Parent Work:' ),
+            'menu_name' => ( 'Work' ),
+    );
+    $args = array(
+            'labels' => $labels,
+            'hierarchical' => true,
+            'description' => 'My Work pieces',
+            'supports' => array( 'title', 'editor', 'thumbnail' ),
+            'taxonomies' => array( 'post_tag' ),
+            'public' => true,
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'menu_position' => 5,
+            'menu_icon' => 'dashicons-star-filled',
+            'show_in_nav_menus' => true,
+            'show_in_rest' => true,
+            'publicly_queryable' => true,
+            'exclude_from_search' => false,
+            'has_archive' => true,
+            'query_var' => true,
+            'can_export' => true,
+            'rewrite' => true,
+            'capability_type' => 'post'
+    );
+    register_post_type( 'work', $args );
+}
+
 function register_my_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
 }
@@ -571,6 +612,19 @@ function register_acf_block_types() {
        'icon'              => 'star-filled',
        'mode'              => 'edit',
        'keywords'          => array( 'info-gallery', 'quote' ),
+   ));
+
+   // register an info gallery temp block.
+   acf_register_block_type(array(
+       'name'              => 'info-gallery-temp',
+       'title'             => __('Info gallery temp'),
+       'description'       => __('A custom info gallery temp block.'),
+       'render_template'   => 'template-parts/blocks/info-gallery-temp/code.php',
+       //'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/info-gallery/style.css',
+       'category'          => 'formatting',
+       'icon'              => 'star-filled',
+       'mode'              => 'edit',
+       'keywords'          => array( 'info-gallery-temp', 'quote' ),
    ));
 
    // register a video-link block.
