@@ -59,8 +59,6 @@ $rand = rand(1, 9999);
             <div class="m-text">
 
                 <div class="m-text-container">
-
-                    <?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
                 
                     <?php if(get_field('title')) { ?>
                     
