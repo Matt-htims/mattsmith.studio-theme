@@ -103,10 +103,7 @@ $postSlug = $post->post_name;
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
                     </div>
 
-                    <button>Work with me</button>
-                    
-
-                    </a>
+                    <a href="mailto:matt.smith3108@gmail.com"><button>Work with me</button></a>
                     
                 </div><!-- .header-right -->
 
